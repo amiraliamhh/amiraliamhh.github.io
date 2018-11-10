@@ -12,7 +12,7 @@ export default class Skill extends React.Component {
             <div class="card col-2">
               <img class="card-img-top" height="200rem" src={this.props.skill_image_url} alt="Card image cap" />
               <div class="card-body">
-                <h5 class="card-title text-center">{this.props.skill_name}</h5>
+                <h5 class="card-title text-center" style={{wordWrap: 'normal'}} >{this.props.skill_name}</h5>
                 {/* <p class="card-text">{this.props.projects_with_this_skill}</p> */}
                 {/* {this._projects(this.props.projects)} */}
               </div>
