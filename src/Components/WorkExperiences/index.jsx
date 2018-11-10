@@ -74,6 +74,7 @@ export default class WorkExperiences extends React.Component {
                     'Redis',
                     'MongoDB',
                     'React',
+                    'Redux',
                     'Angular 5',
                     'Web Sockets',
                     'Jest'
