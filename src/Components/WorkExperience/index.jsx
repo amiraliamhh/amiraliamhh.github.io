@@ -9,7 +9,7 @@ export default class WorkExperience extends React.Component {
 
     render() {
         return (
-            <div class="card">
+            <div class="card mb-3">
               <h5 class="card-header">{this.props.company} (<a style={{fontSize: '.9rem'}} href={this.props.compSite}>{this.props.compSite}</a>)</h5>
               <div class="card-body">
                 <h5 class="card-title">Role: {this.props.role}</h5>

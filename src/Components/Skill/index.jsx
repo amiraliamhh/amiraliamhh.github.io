@@ -1,4 +1,6 @@
 import React from 'react';
+import { Line } from 'rc-progress';
+import './style.css'
 
 export default class Skill extends React.Component {
     constructor(props) {
@@ -9,14 +11,19 @@ export default class Skill extends React.Component {
 
     render() {
         return (
-            <div class="card col-2">
-              <img class="card-img-top" height="200rem" src={this.props.skill_image_url} alt="Card image cap" />
-              <div class="card-body">
-                <h5 class="card-title text-center" style={{wordWrap: 'normal'}} >{this.props.skill_name}</h5>
-                {/* <p class="card-text">{this.props.projects_with_this_skill}</p> */}
-                {/* {this._projects(this.props.projects)} */}
-              </div>
-            </div>
+            <React.Fragment>
+                <div class="skill col-12 row pt-3 pb-3">
+                    <div className="col-3">
+                        <h5 class="text-dark text-center" style={{wordWrap: 'normal'}} >{this.props.skill_name}</h5>
+                    </div>
+                    <div className="col-7">
+                        <Line percent={this.props.percent} strokeWidth="2" strokeColor="#204060" />
+                    </div>
+                    <div className="col-2">
+                      {this.props.percent}%
+                    </div>
+                </div>
+            </React.Fragment>
         );
     }
 

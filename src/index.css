@@ -12,3 +12,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.skill-container {
+  border: solid 1px rgb(189, 188, 188);
+  border-radius: 5px;
+}
