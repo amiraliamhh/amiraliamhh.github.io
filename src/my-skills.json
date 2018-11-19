@@ -123,6 +123,10 @@
           "percentage": 30
         },
         {
+          "skill-name": "Socket.io / ws",
+          "percentage": 50
+        },
+        {
           "skill-name": "Functional Programming",
           "percentage": 60
         },
