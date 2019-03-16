@@ -40242,7 +40242,8 @@ var TableGenerator = function TableGenerator(props) {
       return _react.default.createElement("td", {
         key: index
       }, typeof val === "number" ? generateStars(val) : _typeof(val) === "object" ? _react.default.createElement("a", {
-        href: val.href
+        href: val.href,
+        target: "_blank"
       }, val.text) : val);
     }));
   })));
@@ -40547,7 +40548,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36637" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "33375" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

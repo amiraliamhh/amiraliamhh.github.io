@@ -34,7 +34,7 @@ const TableGenerator = (props) => {
                                 typeof val === "number"
                                 ? generateStars(val)
                                 : typeof val === "object"
-                                ? <a href={val.href} >{ val.text }</a>
+                                ? <a href={val.href} target="_blank" >{ val.text }</a>
                                 : val
                             }</td>
                         ))
