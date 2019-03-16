@@ -40338,7 +40338,7 @@ var Experience = function Experience() {
     website: "http://boursiran.ir/",
     website_name: "boursiran.ir",
     role: "Senior Front-End Developer",
-    stack: ["React", "Redux", "Jest", "Enzyme", "Cypress"],
+    stack: ["React", "Redux", "Redux Saga", "Jest", "Enzyme", "Cypress"],
     about: "Boursiran securities brokerage and commodities trading and Private equity. it founded 1992 in Tehran, Iran."
   }), _react.default.createElement(_Components.Accordion, {
     className: "mt-2",
@@ -40450,6 +40450,16 @@ var _Contact = _interopRequireDefault(require("./Contact"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n    h1 {\n        text-align: center;\n    }\n\n    .container {\n        padding: 0px 6em;\n    }\n\n    p {\n        line-height: 2em;\n    }\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject() {
   var data = _taggedTemplateLiteral(["\n    width: 100%;\n    box-sizing: border-box;\n    padding: 5em;\n\n    h2 {\n        text-align: center;\n        color: #111;\n    }\n"]);
 
@@ -40464,8 +40474,20 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 var Container = _styledComponents.default.div(_templateObject());
 
+var HomeContainer = _styledComponents.default.div(_templateObject2());
+
+var Home = function Home() {
+  return _react.default.createElement(HomeContainer, null, _react.default.createElement("h1", null, "Welcome!"), _react.default.createElement("div", {
+    className: "container"
+  }, _react.default.createElement("p", null, "Hi! I am Amirali Ameri, a Full-stack Javascript Developer, React Lover and Golang enthusiast. I have more than 3 years of experience in industry and have worked for more than 15 companies in these years (Full-time, Part-time, and Remote). I have worked both as a back-end and also as a front-end developer, but I consider my self mostly a front-end developer. You can see my skills and personal information in this website (using top navigation bar), and other information about me are available via linkedin and other websites such as my Github and Stackoverflow account (you can find them in ", _react.default.createElement("em", null, "contact"), " section).")));
+};
+
 var App = function App() {
   return _react.default.createElement(_reactRouterDom.BrowserRouter, null, _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_Components.Navbar, null), _react.default.createElement(Container, null, _react.default.createElement(_reactRouterDom.Route, {
+    path: "/",
+    exact: true,
+    component: Home
+  }), _react.default.createElement(_reactRouterDom.Route, {
     path: "/about",
     exact: true,
     component: _About.default
@@ -40525,7 +40547,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37999" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "33681" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

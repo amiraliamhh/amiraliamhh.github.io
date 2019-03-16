@@ -25,7 +25,7 @@ const Experience = () => {
                 website="http://boursiran.ir/"
                 website_name="boursiran.ir"
                 role="Senior Front-End Developer"
-                stack={["React", "Redux", "Jest", "Enzyme", "Cypress"]}
+                stack={["React", "Redux", "Redux Saga", "Jest", "Enzyme", "Cypress"]}
                 about="Boursiran securities brokerage and commodities trading and Private equity. it founded 1992 in Tehran, Iran." />
 
                 <Accordion 
