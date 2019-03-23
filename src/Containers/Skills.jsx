@@ -15,7 +15,7 @@ const Skills = () => {
         [
             "React",
             5,
-            "Angular:",
+            "Angular 7:",
             2,
         ],
         [
@@ -23,6 +23,18 @@ const Skills = () => {
             5,
             "Webpack",
             3,
+        ],
+        [
+            "Redux Thunk",
+            4,
+            "Redux Saga",
+            4,
+        ],
+        [
+            "Ngrx",
+            3,
+            "Apollo",
+            1,
         ],
         [
             "GraphQL",
@@ -54,6 +66,12 @@ const Skills = () => {
             "Mocha",
             3,
         ],
+        [
+            "Protractor",
+            2,
+            "Cypress",
+            3,
+        ]
         [
             "Socket.io",
             4,
