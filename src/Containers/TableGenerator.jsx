@@ -5,6 +5,7 @@ import MUIStarEmpty from '@material-ui/icons/StarBorder'
 import { Table } from '../Components'
 
 const TableGenerator = (props) => {
+    console.log('props: ', props);
 
     const generateStars = (count) => {
         let arr = new Array(5).fill(0);
@@ -26,10 +27,10 @@ const TableGenerator = (props) => {
         <Table width="80%" >
             <tbody>
             {
-                props.values.map((values, i) => (
+                (props.values || []).map((values, i) => (
                     <tr key={i} >
                     {
-                        values.map((val, index) => (
+                        (values || []).map((val, index) => (
                             <td key={index} >{ 
                                 typeof val === "number"
                                 ? generateStars(val)
